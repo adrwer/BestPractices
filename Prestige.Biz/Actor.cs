@@ -39,7 +39,9 @@ namespace Prestige.Biz
             set { jobTitle = value; }
         }
 
-        //private string jobTitle;
+        public int ActorAge { get; set; }
+        public string ActorDescription { get; set; } =
+            "Regular actor";
 
         /// <summary>
         /// This is will return the title
