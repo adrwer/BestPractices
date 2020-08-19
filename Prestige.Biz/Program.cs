@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace Prestige.Biz
 {
@@ -22,8 +23,21 @@ namespace Prestige.Biz
         {
             //Console.WriteLine(ConstantNumber);
             //Console.WriteLine(ReadOnlyNumber);
-            Agency agency = null;
-            Console.WriteLine(agency?.Name);
+            //Agency agency = null;
+            //Console.WriteLine(agency?.Name);
+
+            //FileStream fs1 = new FileStream(@"c:\aow_drv.log", FileMode.Open);
+            //FileStream fs2 = new FileStream(@"c:\aow_drv.log", FileMode.Open);
+
+            using (FileStream fs1 = new FileStream(@"c:\aow_drv.log", FileMode.Open))
+            {
+                //todo
+            }
+
+            using (FileStream fs2 = new FileStream(@"c:\aow_drv.log", FileMode.Open))
+            {
+                //todo
+            }
             Console.ReadKey();
         }
     }
