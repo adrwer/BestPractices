@@ -20,8 +20,10 @@ namespace Prestige.Biz
 
         static void Main(string[] args)
         {
-            Console.WriteLine(ConstantNumber);
-            Console.WriteLine(ReadOnlyNumber);
+            //Console.WriteLine(ConstantNumber);
+            //Console.WriteLine(ReadOnlyNumber);
+            Agency agency = null;
+            Console.WriteLine(agency?.Name);
             Console.ReadKey();
         }
     }
