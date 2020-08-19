@@ -48,7 +48,14 @@ namespace Prestige.Biz
 
         public Agency CurrentAgency
         {
-            get { return currentAgency; }
+            get
+            {
+                if (currentAgency == null)
+                {
+                    currentAgency = new Agency();
+                }
+                return currentAgency;
+            }
             set { currentAgency = value; }
         }
 
