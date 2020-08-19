@@ -81,5 +81,11 @@ namespace Prestige.Biz
             }
             
         }
+
+        public string GetAgency()
+        {
+            var currentAgency = new Agency();
+            return currentAgency.Name;
+        }
     }
 }
